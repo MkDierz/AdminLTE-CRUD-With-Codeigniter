@@ -13,7 +13,6 @@ class Sensor extends AUTH_Controller
   public function index()
   {
     $data['userdata'] = $this->userdata;
-    $data['dataSensor']    = $this->M_sensor->getdata();
 
     $data['page']      = "Sensor";
     $data['judul']     = "Data Sensor";

@@ -1,5 +1,5 @@
 <script type="text/javascript">
-	var refInterval = window.setInterval('tampilSensor()', 3000); // 30 seconds
+	var refInterval = window.setInterval('tampilSensor()', 60000); // 30 seconds
 
 	var MyTable = $('#list-data').dataTable({
 		"searching": false,

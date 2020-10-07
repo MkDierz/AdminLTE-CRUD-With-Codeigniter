@@ -9,8 +9,10 @@
         <tr>
           <!-- <th>#</th> -->
           <th>Waktu</th>
-          <th>Seri sensor</th>
-          <th>Data sensor</th>
+          <th>S1</th>
+          <th>S2</th>
+          <th>S3</th>
+          <th>S4</th>
         </tr>
       </thead>
       <tbody id="data-sensor">

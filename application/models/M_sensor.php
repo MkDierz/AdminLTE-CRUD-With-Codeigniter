@@ -19,8 +19,19 @@ class M_sensor extends CI_Model {
   public function getdata()
   {
     $this->db->select('*');
-    $this->db->from('sensor');
-    $this->db->order_by('time', 'desc');
+    $this->db->from('union');
+    $this->db->order_by('TIME', 'desc');
+    $query = $this->db->get();
+    if ($query->num_rows()>0) {
+      return $query->result();
+    }
+  }
+  public function getlatest()
+  {
+    $this->db->select('*');
+    $this->db->from('union');
+    $this->db->order_by('TIME', 'desc');
+    $this->db->limit(200);
     $query = $this->db->get();
     if ($query->num_rows()>0) {
       return $query->result();
